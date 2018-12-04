@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pershyn.controller.Controller">
+    <tabs>
+        <Tab text="LINKS &amp; ITEMS">
+            <content>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+                    <children>
+                        <TextField fx:id="linkTextField" layoutX="14.0" layoutY="36.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="750.0" promptText="ENTER LINK TO THE ITEM" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+                        <TextArea fx:id="resultField" layoutX="14.0" layoutY="124.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="750.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+                        <Button fx:id="searchingButton" layoutX="14.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onButtonSearchClick" prefHeight="55.0" prefWidth="200.0" text="SEARCH" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="575.0" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="REGISTRATOR">
+            <content>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+                    <children>
+                        <TextField fx:id="emailField" layoutX="67.0" layoutY="39.0" prefHeight="37.0" prefWidth="328.0" promptText="EMAIL" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="100.0" />
+                        <TextField fx:id="pasField" layoutX="25.0" layoutY="94.0" prefHeight="37.0" prefWidth="189.0" promptText="PASSWORD" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="100.0" />
+                        <TextField fx:id="nameField" layoutX="67.0" layoutY="146.0" prefHeight="37.0" prefWidth="189.0" promptText="NAME" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="100.0" />
+                        <Button fx:id="registerButton" layoutX="25.0" layoutY="225.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="55.0" prefWidth="200.0" text="REGISTER" AnchorPane.leftAnchor="25.0" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="BUYING HELPER">
+            <content>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+                    <children>
+                        <TextField fx:id="loginField" layoutX="29.0" layoutY="52.0" prefHeight="37.0" prefWidth="643.0" promptText="LOGIN" AnchorPane.leftAnchor="25.0" />
+                        <Button fx:id="addToCartButton" layoutX="25.0" layoutY="323.0" mnemonicParsing="false" onAction="#addToCartButtonClick" prefHeight="50.0" prefWidth="200.0" text="ADD TO CART" AnchorPane.leftAnchor="25.0" />
+                        <TextField fx:id="passwordField" layoutX="29.0" layoutY="123.0" prefHeight="37.0" prefWidth="643.0" promptText="PASSWORD" AnchorPane.leftAnchor="25.0" />
+                        <TextField fx:id="itemId" layoutX="25.0" layoutY="263.0" prefHeight="37.0" prefWidth="643.0" promptText="ITEMID" AnchorPane.leftAnchor="25.0" />
+                        <Button fx:id="signButton" layoutX="25.0" layoutY="192.0" mnemonicParsing="false" onAction="#signIn" prefHeight="50.0" prefWidth="200.0" text="SIGN IN" />
+                        <!--<DatePicker fx:id="datePicker1" layoutX="27.0" layoutY="424.0" />-->
+                        <!--<DatePicker fx:id="datePicker2" layoutX="247.0" layoutY="424.0" />-->
+                        <!--<Button fx:id="selectButton" layoutX="27.0" layoutY="482.0" mnemonicParsing="false" onAction="#selectButtonClick" prefHeight="51.0" prefWidth="200.0" text="Select" />-->
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
