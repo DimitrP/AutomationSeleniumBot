@@ -24,4 +24,4 @@ Bot can add an item to your cart at amazon.com
         -   input item ID
 
 ![Index](screenshots/4_Bot.png)        
-smth
+
